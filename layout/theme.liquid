@@ -15,10 +15,12 @@
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
 
-    {% comment %} Typography: Inter (loaded from Google Fonts) {% endcomment %}
+    {% comment %} Typography: fonts chosen in Theme settings > Typography (loaded from Google Fonts) {% endcomment %}
+    {%- assign hf = settings.font_heading_family | default: 'Inter' -%}
+    {%- assign bf = settings.font_body_family | default: 'Inter' -%}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ hf | replace: ' ', '+' }}:wght@400;500;600;700;800{% unless bf == hf %}&family={{ bf | replace: ' ', '+' }}:wght@400;500;600;700{% endunless %}&display=swap">
 
     {% comment %} Design tokens {% endcomment %}
     <style>
@@ -41,9 +43,10 @@
         --bg-section: {{ settings.gradient_section     | default: settings.color_background }};
         --bg-hero-overlay: {{ settings.gradient_hero_overlay | default: 'linear-gradient(180deg, rgba(10,10,10,.55), rgba(10,10,10,.85))' }};
 
-        --font-heading: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-        --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-        --font-heading-weight: 600;
+        --font-heading: '{{ hf }}', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+        --font-body: '{{ bf }}', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+        --font-heading-weight: {{ settings.heading_weight | default: 600 }};
+        --base-font-size: {{ settings.base_font_size | default: 16 }}px;
         --page-width: 1200px;
       }
     </style>
