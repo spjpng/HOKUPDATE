@@ -1,4 +1,4 @@
-<section class="section" id="contact-form">
+<section class="section color-{{ section.settings.color_scheme }}" id="contact-form">
   <div class="page-width">
     <div class="section__head">
       {%- if section.settings.eyebrow != blank -%}<span class="eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
@@ -47,6 +47,7 @@
 {
   "name": "Contact form",
   "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Contact" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Get in touch" },
     { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Questions before booking? Send a message." },

@@ -44,6 +44,38 @@
     ]
   },
   {
+    "name": "Color schemes",
+    "settings": [
+      { "type": "paragraph", "content": "Build reusable color schemes here (Scheme 1, 2, 3…). Then open any section and choose its “Color scheme” to set that section’s background, text and button colors. Add as many schemes as you like." },
+      {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          { "type": "color", "id": "background", "label": "Background", "default": "#0a0a0a" },
+          { "type": "color_background", "id": "background_gradient", "label": "Background gradient (optional)" },
+          { "type": "color", "id": "text", "label": "Text", "default": "#f2f2f2" },
+          { "type": "color", "id": "accent", "label": "Accent (links, prices, icons, eyebrow)", "default": "#c8c8cc" },
+          { "type": "color", "id": "card", "label": "Cards / surfaces", "default": "#141414" },
+          { "type": "color", "id": "border", "label": "Borders / hairlines", "default": "#2a2a2a" },
+          { "type": "color", "id": "button", "label": "Button background", "default": "#c8c8cc" },
+          { "type": "color", "id": "button_label", "label": "Button text", "default": "#0a0a0a" }
+        ],
+        "role": {
+          "background": { "solid": "background", "gradient": "background_gradient" },
+          "text": "text",
+          "links": "accent",
+          "icons": "accent",
+          "primary_button": "button",
+          "on_primary_button": "button_label",
+          "primary_button_border": "button",
+          "secondary_button": "background",
+          "secondary_button_label": "accent",
+          "secondary_button_border": "accent"
+        }
+      }
+    ]
+  },
+  {
     "name": "Typography",
     "settings": [
       { "type": "select", "id": "font_heading_family", "label": "Heading font", "default": "Inter", "options": [
