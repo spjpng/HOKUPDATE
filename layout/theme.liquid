@@ -51,6 +51,23 @@
       }
     </style>
 
+    {% comment %} Per-section color schemes — chosen per section via its "Color scheme" setting {% endcomment %}
+    <style>
+      {%- for scheme in settings.color_schemes -%}
+        {%- assign sc = scheme.settings -%}
+        .color-{{ scheme.id }} {
+          --color-text: {{ sc.text }};
+          --color-silver: {{ sc.accent }};
+          --color-border: {{ sc.border }};
+          --color-surface: {{ sc.card }};
+          --bg-surface: {{ sc.card }};
+          --bg-section: {{ sc.background_gradient | default: sc.background }};
+          --bg-button: {{ sc.button }};
+          --color-button-text: {{ sc.button_label }};
+        }
+      {%- endfor -%}
+    </style>
+
     {{ content_for_header }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>

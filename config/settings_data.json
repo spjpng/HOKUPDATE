@@ -19,6 +19,63 @@
     "color_silver": "#c8c8cc",
     "color_border": "#2a2a2a",
     "color_button_text": "#0a0a0a",
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#0a0a0a",
+          "text": "#f2f2f2",
+          "accent": "#c8c8cc",
+          "card": "#141414",
+          "border": "#2a2a2a",
+          "button": "#c8c8cc",
+          "button_label": "#0a0a0a"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#141414",
+          "text": "#f2f2f2",
+          "accent": "#c8c8cc",
+          "card": "#1f1f1f",
+          "border": "#303030",
+          "button": "#c8c8cc",
+          "button_label": "#0a0a0a"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#e9e9ec",
+          "text": "#0a0a0a",
+          "accent": "#4a4a4f",
+          "card": "#ffffff",
+          "border": "#d0d0d4",
+          "button": "#0a0a0a",
+          "button_label": "#ffffff"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#121212",
+          "accent": "#6a6a6a",
+          "card": "#f4f4f6",
+          "border": "#e2e2e6",
+          "button": "#121212",
+          "button_label": "#ffffff"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#8d8d92",
+          "text": "#0a0a0a",
+          "accent": "#0a0a0a",
+          "card": "#ffffff",
+          "border": "#b5b5ba",
+          "button": "#0a0a0a",
+          "button_label": "#ffffff"
+        }
+      }
+    },
     "gradient_button": "linear-gradient(135deg, rgba(244, 244, 246, 1), rgba(200, 200, 204, 1) 55%, rgba(141, 141, 146, 1) 100%)",
     "gradient_hero_overlay": "linear-gradient(180deg, rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.85) 100%)",
     "font_heading_family": "Inter",
