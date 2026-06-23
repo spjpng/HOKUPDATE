@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section color-{{ section.settings.color_scheme }}">
   <div class="page-width">
     <div class="about">
       <div class="about__media">
@@ -24,6 +24,7 @@
 {
   "name": "About",
   "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
     { "type": "image_picker", "id": "image", "label": "Photo" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "About" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Meet your stylist" },

@@ -19,23 +19,60 @@
   {
     "name": "Colors",
     "settings": [
-      { "type": "header", "content": "Solid palette" },
-      { "type": "color", "id": "color_background", "label": "Background", "default": "#0a0a0a" },
-      { "type": "color", "id": "color_surface", "label": "Surface / cards", "default": "#141414" },
+      { "type": "header", "content": "Backgrounds" },
+      { "type": "paragraph", "content": "Pick a solid color for each area below. Want a gradient instead? Fill in the matching “gradient” field underneath it — a gradient always overrides the solid color. Leave a gradient field empty to keep the solid." },
+      { "type": "color", "id": "color_background", "label": "Page background", "default": "#0a0a0a" },
+      { "type": "color_background", "id": "gradient_background", "label": "Page background — gradient (optional)" },
+      { "type": "color", "id": "section_color", "label": "Section background", "default": "#0a0a0a" },
+      { "type": "color_background", "id": "gradient_section", "label": "Section background — gradient (optional)" },
+      { "type": "color", "id": "color_surface", "label": "Cards / surfaces", "default": "#141414" },
+      { "type": "color_background", "id": "gradient_surface", "label": "Cards / surfaces — gradient (optional)" },
+      { "type": "color", "id": "footer_color", "label": "Footer", "default": "#141414" },
+      { "type": "color_background", "id": "gradient_footer", "label": "Footer — gradient (optional)" },
+      { "type": "color", "id": "button_color", "label": "Primary button", "default": "#c8c8cc" },
+      { "type": "color_background", "id": "gradient_button", "label": "Primary button — gradient (optional)", "default": "linear-gradient(135deg, #f4f4f6 0%, #c8c8cc 55%, #8d8d92 100%)" },
+      { "type": "header", "content": "Hero overlay" },
+      { "type": "paragraph", "content": "A see-through gradient layered over the hero image so the headline stays readable." },
+      { "type": "color_background", "id": "gradient_hero_overlay", "label": "Hero overlay", "default": "linear-gradient(180deg, rgba(10,10,10,0.55), rgba(10,10,10,0.85))" },
+      { "type": "header", "content": "Text, borders & accents (solid color)" },
       { "type": "color", "id": "color_text", "label": "Text", "default": "#f2f2f2" },
       { "type": "color", "id": "color_muted", "label": "Muted text", "default": "#a8a8a8" },
-      { "type": "color", "id": "color_silver", "label": "Silver accent", "default": "#c8c8cc" },
+      { "type": "color", "id": "color_silver", "label": "Silver accent (links, prices, icons)", "default": "#c8c8cc" },
       { "type": "color", "id": "color_border", "label": "Borders / hairlines", "default": "#2a2a2a" },
       { "type": "color", "id": "color_button_text", "label": "Button text", "default": "#0a0a0a" },
-      { "type": "color", "id": "color_error", "label": "Error / alert", "default": "#c0392b" },
-      { "type": "header", "content": "Gradients (optional — override the solid backgrounds)" },
-      { "type": "paragraph", "content": "Set a gradient to replace the matching flat background. Leave blank to keep the solid color." },
-      { "type": "color_background", "id": "gradient_background", "label": "Page background gradient" },
-      { "type": "color_background", "id": "gradient_surface", "label": "Surface / cards gradient" },
-      { "type": "color_background", "id": "gradient_footer", "label": "Footer gradient" },
-      { "type": "color_background", "id": "gradient_button", "label": "Primary button gradient", "default": "linear-gradient(135deg, #f4f4f6 0%, #c8c8cc 55%, #8d8d92 100%)" },
-      { "type": "color_background", "id": "gradient_section", "label": "Section background gradient" },
-      { "type": "color_background", "id": "gradient_hero_overlay", "label": "Hero overlay gradient", "default": "linear-gradient(180deg, rgba(10,10,10,0.55), rgba(10,10,10,0.85))" }
+      { "type": "color", "id": "color_error", "label": "Error / alert", "default": "#c0392b" }
+    ]
+  },
+  {
+    "name": "Color schemes",
+    "settings": [
+      { "type": "paragraph", "content": "Build reusable color schemes here (Scheme 1, 2, 3…). Then open any section and choose its “Color scheme” to set that section’s background, text and button colors. Add as many schemes as you like." },
+      {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          { "type": "color", "id": "background", "label": "Background", "default": "#0a0a0a" },
+          { "type": "color_background", "id": "background_gradient", "label": "Background gradient (optional)" },
+          { "type": "color", "id": "text", "label": "Text", "default": "#f2f2f2" },
+          { "type": "color", "id": "accent", "label": "Accent (links, prices, icons, eyebrow)", "default": "#c8c8cc" },
+          { "type": "color", "id": "card", "label": "Cards / surfaces", "default": "#141414" },
+          { "type": "color", "id": "border", "label": "Borders / hairlines", "default": "#2a2a2a" },
+          { "type": "color", "id": "button", "label": "Button background", "default": "#c8c8cc" },
+          { "type": "color", "id": "button_label", "label": "Button text", "default": "#0a0a0a" }
+        ],
+        "role": {
+          "background": { "solid": "background", "gradient": "background_gradient" },
+          "text": "text",
+          "links": "accent",
+          "icons": "accent",
+          "primary_button": "button",
+          "on_primary_button": "button_label",
+          "primary_button_border": "button",
+          "secondary_button": "background",
+          "secondary_button_label": "accent",
+          "secondary_button_border": "accent"
+        }
+      }
     ]
   },
   {
@@ -67,7 +104,7 @@
     "settings": [
       { "type": "text", "id": "phone", "label": "Phone number" },
       { "type": "text", "id": "email", "label": "Email address" },
-      { "type": "url", "id": "instagram_url", "label": "Instagram URL", "default": "" },
+      { "type": "url", "id": "instagram_url", "label": "Instagram URL" },
       { "type": "url", "id": "facebook_url", "label": "Facebook URL" },
       { "type": "url", "id": "booking_url", "label": "Default booking URL", "info": "Fallback link used by service \"Select\" buttons and main Book CTA when no specific link is set." }
     ]

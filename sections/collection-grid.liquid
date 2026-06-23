@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section color-{{ section.settings.color_scheme }}">
   <div class="page-width">
     <div class="section__head">
       <h1>{{ collection.title | default: section.settings.heading }}</h1>
@@ -50,6 +50,7 @@
 {
   "name": "Product grid",
   "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
     {
       "type": "select",
       "id": "layout",
