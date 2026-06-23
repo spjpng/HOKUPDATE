@@ -67,7 +67,7 @@
     "settings": [
       { "type": "text", "id": "phone", "label": "Phone number" },
       { "type": "text", "id": "email", "label": "Email address" },
-      { "type": "url", "id": "instagram_url", "label": "Instagram URL", "default": "" },
+      { "type": "url", "id": "instagram_url", "label": "Instagram URL" },
       { "type": "url", "id": "facebook_url", "label": "Facebook URL" },
       { "type": "url", "id": "booking_url", "label": "Default booking URL", "info": "Fallback link used by service \"Select\" buttons and main Book CTA when no specific link is set." }
     ]
