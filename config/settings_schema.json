@@ -1,7 +1,7 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "ECB Stylez",
+    "theme_name": "HOUSE OF KINGS",
     "theme_version": "1.0.0",
     "theme_author": "Custom",
     "theme_documentation_url": "https://shopify.dev",
@@ -12,8 +12,8 @@
     "settings": [
       { "type": "image_picker", "id": "logo", "label": "Logo image" },
       { "type": "range", "id": "logo_width", "min": 80, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 160 },
-      { "type": "text", "id": "business_name", "label": "Business name", "default": "ECB Stylez" },
-      { "type": "text", "id": "tagline", "label": "Tagline", "default": "Premium braids & installs" }
+      { "type": "text", "id": "business_name", "label": "Business name", "default": "HOUSE OF KINGS" },
+      { "type": "text", "id": "tagline", "label": "Tagline", "default": "Barbershop · Braids · Beauty" }
     ]
   },
   {
@@ -49,7 +49,7 @@
     "settings": [
       { "type": "text", "id": "phone", "label": "Phone number" },
       { "type": "text", "id": "email", "label": "Email address" },
-      { "type": "url", "id": "instagram_url", "label": "Instagram URL", "default": "https://www.instagram.com/theecbstylez/" },
+      { "type": "url", "id": "instagram_url", "label": "Instagram URL", "default": "" },
       { "type": "url", "id": "facebook_url", "label": "Facebook URL" },
       { "type": "url", "id": "booking_url", "label": "Default booking URL", "info": "Fallback link used by service \"Select\" buttons and main Book CTA when no specific link is set." }
     ]

@@ -1,4 +1,4 @@
-/* ECB Stylez — lightweight theme interactions (no dependencies) */
+/* HOUSE OF KINGS — lightweight theme interactions (no dependencies) */
 (function () {
   'use strict';
 
