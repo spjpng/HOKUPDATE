@@ -19,23 +19,25 @@
   {
     "name": "Colors",
     "settings": [
-      { "type": "header", "content": "Solid palette" },
-      { "type": "color", "id": "color_background", "label": "Background", "default": "#0a0a0a" },
-      { "type": "color", "id": "color_surface", "label": "Surface / cards", "default": "#141414" },
+      { "type": "header", "content": "Backgrounds — solid color OR gradient" },
+      { "type": "paragraph", "content": "Each background below can be a flat color or a gradient. Click the swatch, then switch between “Solid” and “Gradient” at the top of the picker — your choice for every area." },
+      { "type": "color_background", "id": "gradient_background", "label": "Page background", "default": "#0a0a0a" },
+      { "type": "color_background", "id": "gradient_section", "label": "Section background", "default": "#0a0a0a" },
+      { "type": "color_background", "id": "gradient_surface", "label": "Cards / surfaces", "default": "#141414" },
+      { "type": "color_background", "id": "gradient_footer", "label": "Footer", "default": "#141414" },
+      { "type": "color_background", "id": "gradient_button", "label": "Primary button", "default": "linear-gradient(135deg, #f4f4f6 0%, #c8c8cc 55%, #8d8d92 100%)" },
+      { "type": "color_background", "id": "gradient_hero_overlay", "label": "Hero overlay (sits over the hero image)", "default": "linear-gradient(180deg, rgba(10,10,10,0.55), rgba(10,10,10,0.85))" },
+      { "type": "header", "content": "Text, borders & accents (solid color)" },
       { "type": "color", "id": "color_text", "label": "Text", "default": "#f2f2f2" },
       { "type": "color", "id": "color_muted", "label": "Muted text", "default": "#a8a8a8" },
-      { "type": "color", "id": "color_silver", "label": "Silver accent", "default": "#c8c8cc" },
+      { "type": "color", "id": "color_silver", "label": "Silver accent (links, prices, icons)", "default": "#c8c8cc" },
       { "type": "color", "id": "color_border", "label": "Borders / hairlines", "default": "#2a2a2a" },
       { "type": "color", "id": "color_button_text", "label": "Button text", "default": "#0a0a0a" },
       { "type": "color", "id": "color_error", "label": "Error / alert", "default": "#c0392b" },
-      { "type": "header", "content": "Gradients (optional — override the solid backgrounds)" },
-      { "type": "paragraph", "content": "Set a gradient to replace the matching flat background. Leave blank to keep the solid color." },
-      { "type": "color_background", "id": "gradient_background", "label": "Page background gradient" },
-      { "type": "color_background", "id": "gradient_surface", "label": "Surface / cards gradient" },
-      { "type": "color_background", "id": "gradient_footer", "label": "Footer gradient" },
-      { "type": "color_background", "id": "gradient_button", "label": "Primary button gradient", "default": "linear-gradient(135deg, #f4f4f6 0%, #c8c8cc 55%, #8d8d92 100%)" },
-      { "type": "color_background", "id": "gradient_section", "label": "Section background gradient" },
-      { "type": "color_background", "id": "gradient_hero_overlay", "label": "Hero overlay gradient", "default": "linear-gradient(180deg, rgba(10,10,10,0.55), rgba(10,10,10,0.85))" }
+      { "type": "header", "content": "Advanced" },
+      { "type": "paragraph", "content": "These stay solid colors — they power see-through effects and form fields, so they can’t be gradients." },
+      { "type": "color", "id": "color_background", "label": "Base color for overlays / sticky header", "info": "Keep this close to your page background color.", "default": "#0a0a0a" },
+      { "type": "color", "id": "color_surface", "label": "Form field / panel color", "default": "#141414" }
     ]
   },
   {
