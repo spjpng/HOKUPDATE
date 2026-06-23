@@ -35,12 +35,12 @@
         --color-button-text: {{ settings.color_button_text }};
         --color-error: {{ settings.color_error | default: '#c0392b' }};
 
-        /* Background tokens — gradient if set, else solid */
+        /* Background tokens — gradient if set, else solid color for that area */
         --bg-page:    {{ settings.gradient_background  | default: settings.color_background }};
+        --bg-section: {{ settings.gradient_section     | default: settings.section_color | default: settings.color_background }};
         --bg-surface: {{ settings.gradient_surface     | default: settings.color_surface }};
-        --bg-footer:  {{ settings.gradient_footer      | default: settings.color_surface }};
-        --bg-button:  {{ settings.gradient_button      | default: settings.color_silver }};
-        --bg-section: {{ settings.gradient_section     | default: settings.color_background }};
+        --bg-footer:  {{ settings.gradient_footer      | default: settings.footer_color  | default: settings.color_surface }};
+        --bg-button:  {{ settings.gradient_button      | default: settings.button_color  | default: settings.color_silver }};
         --bg-hero-overlay: {{ settings.gradient_hero_overlay | default: 'linear-gradient(180deg, rgba(10,10,10,.55), rgba(10,10,10,.85))' }};
 
         --font-heading: '{{ hf }}', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
