@@ -24,11 +24,36 @@
     "services": {
       "type": "services-preview",
       "blocks": {
-        "s1": { "type": "service", "settings": { "title": "Haircuts", "text": "Precision cuts for men, teens & kids.", "link": "shopify://collections/haircuts" } },
-        "s2": { "type": "service", "settings": { "title": "Braids & Installs", "text": "Knotless, sew-ins, quick weaves & wig installs.", "link": "shopify://collections/hair-services" } },
-        "s3": { "type": "service", "settings": { "title": "Merch", "text": "House of Kings tees & gear.", "link": "shopify://collections/merch" } }
+        "s1": {
+          "type": "service",
+          "settings": {
+            "title": "Haircuts",
+            "text": "Precision cuts for men, teens & kids.",
+            "link": "shopify://collections/haircuts"
+          }
+        },
+        "s2": {
+          "type": "service",
+          "settings": {
+            "title": "Braids & Installs",
+            "text": "Knotless, sew-ins, quick weaves & wig installs.",
+            "link": "shopify://collections/hair-services"
+          }
+        },
+        "s3": {
+          "type": "service",
+          "settings": {
+            "title": "Merch",
+            "text": "House of Kings tees & gear.",
+            "link": "shopify://collections/merch"
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
       "settings": {
         "eyebrow": "Services",
         "heading": "What we do",
@@ -40,11 +65,30 @@
     "gallery": {
       "type": "gallery-teaser",
       "blocks": {
-        "g1": { "type": "pair", "settings": { "caption": "Knotless" } },
-        "g2": { "type": "pair", "settings": { "caption": "Sew-In" } },
-        "g3": { "type": "pair", "settings": { "caption": "Wig install" } }
+        "g1": {
+          "type": "pair",
+          "settings": {
+            "caption": "ADULT"
+          }
+        },
+        "g2": {
+          "type": "pair",
+          "settings": {
+            "caption": "TEENS"
+          }
+        },
+        "g3": {
+          "type": "pair",
+          "settings": {
+            "caption": "MERCH"
+          }
+        }
       },
-      "block_order": ["g1", "g2", "g3"],
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ],
       "settings": {
         "eyebrow": "Gallery",
         "heading": "Before & after",
@@ -56,11 +100,36 @@
     "reviews": {
       "type": "social-proof",
       "blocks": {
-        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Absolutely love my hair! So professional and clean.", "author": "Client" } },
-        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Best braids I've ever had. Booking again already.", "author": "Client" } },
-        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Gentle, fast, and the install looked perfect.", "author": "Client" } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Absolutely love my hair! So professional and clean.",
+            "author": "Client"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Best braids I've ever had. Booking again already.",
+            "author": "Client"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Gentle, fast, and the install looked perfect.",
+            "author": "Client"
+          }
+        }
       },
-      "block_order": ["r1", "r2", "r3"],
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
       "settings": {
         "eyebrow": "Reviews",
         "heading": "Loved by clients",
@@ -71,5 +140,10 @@
       }
     }
   },
-  "order": ["hero", "services", "gallery", "reviews"]
+  "order": [
+    "hero",
+    "services",
+    "gallery",
+    "reviews"
+  ]
 }
