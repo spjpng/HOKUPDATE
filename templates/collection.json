@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-grid",
+      "settings": {
+        "layout": "list",
+        "button_label": "Book",
+        "heading": "Shop",
+        "subheading": "",
+        "filter_menu": "",
+        "all_label": "All"
+      }
+    }
+  },
+  "order": ["main"]
+}

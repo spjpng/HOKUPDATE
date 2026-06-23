@@ -1,0 +1,68 @@
+<footer class="footer">
+  <div class="page-width">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h4>{{ settings.business_name }}</h4>
+        {%- if settings.location_text != blank -%}
+          <p class="footer__hours">{{ settings.location_text }}</p>
+        {%- endif -%}
+        {%- if settings.phone != blank -%}
+          <p><a href="tel:{{ settings.phone | strip }}">{{ settings.phone }}</a></p>
+        {%- endif -%}
+        {%- if settings.email != blank -%}
+          <p><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
+        {%- endif -%}
+        <div class="footer__social">
+          {%- if settings.instagram_url != blank -%}<a href="{{ settings.instagram_url }}">Instagram</a>{%- endif -%}
+          {%- if settings.facebook_url != blank -%}<a href="{{ settings.facebook_url }}">Facebook</a>{%- endif -%}
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>{{ section.settings.menu_title }}</h4>
+        <ul>
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'link' -%}
+              <li {{ block.shopify_attributes }}><a href="{{ block.settings.url | default: '#' }}">{{ block.settings.label }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p class="footer__hours">{{ settings.business_hours }}</p>
+      </div>
+      <div class="footer__col">
+        <h4>Find us</h4>
+        {%- if settings.map_embed != blank -%}
+          <div class="map-embed">{{ settings.map_embed }}</div>
+        {%- endif -%}
+        {%- if settings.location_text != blank -%}
+          <p class="footer__hours">{{ settings.location_text }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; {{ 'now' | date: '%Y' }} {{ settings.business_name }}. {{ section.settings.copyright_extra }}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "text", "id": "menu_title", "label": "Links column title", "default": "Explore" },
+    { "type": "text", "id": "copyright_extra", "label": "Extra copyright text" }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Footer link",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Page" },
+        { "type": "url", "id": "url", "label": "Link" }
+      ]
+    }
+  ]
+}
+{% endschema %}

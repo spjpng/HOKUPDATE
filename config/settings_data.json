@@ -1,0 +1,34 @@
+{
+  "current": {
+    "logo_width": 160,
+    "business_name": "ECB Stylez",
+    "tagline": "Premium braids & installs",
+    "color_background": "#000000",
+    "color_surface": "#141414",
+    "color_text": "#f2f2f2",
+    "color_muted": "#a8a8a8",
+    "color_silver": "#c8c8cc",
+    "color_border": "#2a2a2a",
+    "color_button_text": "#0a0a0a",
+    "font_heading": "assistant_n4",
+    "font_body": "assistant_n4",
+    "instagram_url": "https://www.instagram.com/theecbstylez/",
+    "location_text": "Delaware State University x New Castle",
+    "business_hours": "Mon–Sat: 9am–10pm\nSun: Closed",
+    "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=...\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "content_for_index": [],
+    "blocks": {
+      "9278379683843197553": {
+        "type": "shopify://apps/appointo/blocks/app-embed/8e9086b8-9c22-4cd3-b1d1-0967727a5d97",
+        "disabled": false,
+        "settings": {}
+      },
+      "3886181796285292942": {
+        "type": "shopify://apps/cowlendar-booking/blocks/app-embed/6d8b8f6a-9b3c-42b8-b2e6-a758c38d45bf",
+        "disabled": true,
+        "settings": {}
+      }
+    }
+  },
+  "presets": { "Default": {} }
+}

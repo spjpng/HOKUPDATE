@@ -1,0 +1,32 @@
+{%- comment -%}
+  Draggable before/after comparison slider.
+  Accepts: before, after, before_label, after_label, caption
+{%- endcomment -%}
+<figure class="ba-figure">
+  <div class="ba" data-ba style="--pos:50%">
+    {%- if after -%}
+      <img class="ba__img ba__after" src="{{ after | image_url: width: 800 }}" alt="{{ caption | default: 'After' | escape }}" loading="lazy" width="800" height="1067">
+    {%- else -%}
+      <div class="ba__img ba__after">{{ 'image' | placeholder_svg_tag }}</div>
+    {%- endif -%}
+    {%- if before -%}
+      <img class="ba__img ba__before" src="{{ before | image_url: width: 800 }}" alt="{{ caption | default: 'Before' | escape }}" loading="lazy" width="800" height="1067">
+    {%- else -%}
+      <div class="ba__img ba__before">{{ 'image' | placeholder_svg_tag }}</div>
+    {%- endif -%}
+    <span class="ba__tag ba__tag--before">{{ before_label | default: 'Before' }}</span>
+    <span class="ba__tag ba__tag--after">{{ after_label | default: 'After' }}</span>
+    <div class="ba__divider" aria-hidden="true"><span class="ba__handle"></span></div>
+    <input
+      class="ba__range"
+      type="range"
+      min="0"
+      max="100"
+      value="50"
+      aria-label="{{ caption | default: 'Before and after' | escape }} — drag to compare"
+      data-ba-range>
+  </div>
+  {%- if caption != blank -%}
+    <figcaption class="ba-figure__caption">{{ caption }}</figcaption>
+  {%- endif -%}
+</figure>
