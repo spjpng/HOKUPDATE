@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "logo_width": 160,
-    "business_name": "ECB Stylez",
-    "tagline": "Premium braids & installs",
+    "business_name": "HOUSE OF KINGS",
+    "tagline": "Barbershop · Braids · Beauty",
     "color_background": "#000000",
     "color_surface": "#141414",
     "color_text": "#f2f2f2",
@@ -10,10 +19,14 @@
     "color_silver": "#c8c8cc",
     "color_border": "#2a2a2a",
     "color_button_text": "#0a0a0a",
-    "font_heading": "assistant_n4",
-    "font_body": "assistant_n4",
-    "instagram_url": "https://www.instagram.com/theecbstylez/",
-    "location_text": "Delaware State University x New Castle",
+    "font_heading_family": "Inter",
+    "font_body_family": "Inter",
+    "heading_weight": 600,
+    "base_font_size": 16,
+    "email": "INFO@houseofkings.online",
+    "booking_url": "/collections/services",
+    "instagram_url": "",
+    "location_text": "New Castle, DE",
     "business_hours": "Mon–Sat: 9am–10pm\nSun: Closed",
     "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=...\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "content_for_index": [],
@@ -30,5 +43,7 @@
       }
     }
   },
-  "presets": { "Default": {} }
+  "presets": {
+    "Default": {}
+  }
 }

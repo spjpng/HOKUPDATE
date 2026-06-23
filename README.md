@@ -1,4 +1,4 @@
-# ECB Stylez — Shopify Theme
+# HOUSE OF KINGS — Shopify Theme
 
 A custom Shopify **Online Store 2.0** Liquid theme (silver & black, mobile-first, no paid apps).
 

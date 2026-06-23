@@ -1,11 +1,20 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "about": {
       "type": "about",
       "settings": {
-        "heading": "Meet your stylist",
-        "bio": "<p>Hi, I'm Kassie — the hands behind ECB Stylez. I specialize in protective styles, braids, and installs with a clean, modern finish. Add your story, training, and what makes your chair the one to book.</p>",
-        "button_label": "Book with me"
+        "heading": "Welcome to House of Kings",
+        "bio": "<p>House of Kings is your home for premium barbering, braids, and beauty. Our team delivers precision cuts, protective styles, and flawless installs with a clean, modern finish. Edit this section to add your shop's story, your team, and what makes your chair the one to book.</p>",
+        "button_label": "Book now"
       }
     }
   },

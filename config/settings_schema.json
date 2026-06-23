@@ -1,7 +1,7 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "ECB Stylez",
+    "theme_name": "HOUSE OF KINGS",
     "theme_version": "1.0.0",
     "theme_author": "Custom",
     "theme_documentation_url": "https://shopify.dev",
@@ -12,8 +12,8 @@
     "settings": [
       { "type": "image_picker", "id": "logo", "label": "Logo image" },
       { "type": "range", "id": "logo_width", "min": 80, "max": 320, "step": 10, "unit": "px", "label": "Logo width", "default": 160 },
-      { "type": "text", "id": "business_name", "label": "Business name", "default": "ECB Stylez" },
-      { "type": "text", "id": "tagline", "label": "Tagline", "default": "Premium braids & installs" }
+      { "type": "text", "id": "business_name", "label": "Business name", "default": "HOUSE OF KINGS" },
+      { "type": "text", "id": "tagline", "label": "Tagline", "default": "Barbershop · Braids · Beauty" }
     ]
   },
   {
@@ -41,7 +41,25 @@
   {
     "name": "Typography",
     "settings": [
-      { "type": "paragraph", "content": "Typography uses the Inter font family, loaded in the theme. No setting needed." }
+      { "type": "select", "id": "font_heading_family", "label": "Heading font", "default": "Inter", "options": [
+        { "value": "Inter", "label": "Inter (clean sans)" },
+        { "value": "Poppins", "label": "Poppins (rounded)" },
+        { "value": "Montserrat", "label": "Montserrat (modern)" },
+        { "value": "Oswald", "label": "Oswald (tall/condensed)" },
+        { "value": "Bebas Neue", "label": "Bebas Neue (bold display)" },
+        { "value": "Playfair Display", "label": "Playfair Display (serif/luxury)" },
+        { "value": "Cormorant Garamond", "label": "Cormorant (elegant serif)" }
+      ] },
+      { "type": "range", "id": "heading_weight", "min": 400, "max": 800, "step": 100, "label": "Heading weight", "default": 600 },
+      { "type": "select", "id": "font_body_family", "label": "Body font", "default": "Inter", "options": [
+        { "value": "Inter", "label": "Inter (clean sans)" },
+        { "value": "Poppins", "label": "Poppins (rounded)" },
+        { "value": "Montserrat", "label": "Montserrat (modern)" },
+        { "value": "Roboto", "label": "Roboto (neutral)" },
+        { "value": "Lato", "label": "Lato (friendly)" },
+        { "value": "Work Sans", "label": "Work Sans" }
+      ] },
+      { "type": "range", "id": "base_font_size", "min": 14, "max": 20, "step": 1, "unit": "px", "label": "Base text size", "default": 16 }
     ]
   },
   {
@@ -49,7 +67,7 @@
     "settings": [
       { "type": "text", "id": "phone", "label": "Phone number" },
       { "type": "text", "id": "email", "label": "Email address" },
-      { "type": "url", "id": "instagram_url", "label": "Instagram URL", "default": "https://www.instagram.com/theecbstylez/" },
+      { "type": "url", "id": "instagram_url", "label": "Instagram URL", "default": "" },
       { "type": "url", "id": "facebook_url", "label": "Facebook URL" },
       { "type": "url", "id": "booking_url", "label": "Default booking URL", "info": "Fallback link used by service \"Select\" buttons and main Book CTA when no specific link is set." }
     ]

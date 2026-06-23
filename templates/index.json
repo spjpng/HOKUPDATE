@@ -1,23 +1,32 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero",
       "settings": {
-        "eyebrow": "ECB Stylez",
-        "heading": "Braids & installs, done right",
-        "subheading": "Premium hair styling with a clean, modern finish. Book your appointment today.",
+        "eyebrow": "HOUSE OF KINGS",
+        "heading": "Cuts, braids & beauty, done right",
+        "subheading": "Premium barbering and hair styling with a clean, modern finish. Book your appointment today.",
         "button_label": "Book now",
-        "button_link": "shopify://collections/all",
-        "button2_label": "View services",
-        "button2_link": ""
+        "button_link": "shopify://collections/services",
+        "button2_label": "Shop merch",
+        "button2_link": "shopify://collections/merch"
       }
     },
     "services": {
       "type": "services-preview",
       "blocks": {
-        "s1": { "type": "service", "settings": { "title": "Knotless braids", "text": "Lightweight, natural-looking, long-lasting.", "link": "" } },
-        "s2": { "type": "service", "settings": { "title": "Sew-Ins", "text": "Seamless installs with a flawless finish.", "link": "" } },
-        "s3": { "type": "service", "settings": { "title": "Wig installs", "text": "Custom, glued or glueless, melted to perfection.", "link": "" } }
+        "s1": { "type": "service", "settings": { "title": "Haircuts", "text": "Precision cuts for men, teens & kids.", "link": "shopify://collections/haircuts" } },
+        "s2": { "type": "service", "settings": { "title": "Braids & Installs", "text": "Knotless, sew-ins, quick weaves & wig installs.", "link": "shopify://collections/hair-services" } },
+        "s3": { "type": "service", "settings": { "title": "Merch", "text": "House of Kings tees & gear.", "link": "shopify://collections/merch" } }
       },
       "block_order": ["s1", "s2", "s3"],
       "settings": {
@@ -25,7 +34,7 @@
         "heading": "What we do",
         "subheading": "",
         "view_all_label": "See full service menu",
-        "view_all_link": "shopify://collections/all"
+        "view_all_link": "shopify://collections/services"
       }
     },
     "gallery": {
